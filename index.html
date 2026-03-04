@@ -561,10 +561,18 @@ function calculateResult() {
 
 resultEl.innerHTML = `
   🎉 당신에게 어울리는 장르는! 🎉 <br><br>
-   <strong style="font-size:28px;">${genreNames[resultGenre]}</strong> 
 
+  <strong style="font-size:28px;">
+    ${genreNames[resultGenre]}
+  </strong>
 
   <br><br>
+
+  <img src="${resultGenre}.png" 
+       style="width:800px; display:block; margin:20px auto; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.3);">
+
+  <br>
+
   <button onclick="restartQuiz()">🔁 다시하기</button>
   <button onclick="showDescription()">📖 장르 설명 보기</button>
 `;
@@ -609,4 +617,5 @@ function showDescription() {
 </body>
 
 </html>
+
 
